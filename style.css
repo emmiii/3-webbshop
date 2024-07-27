@@ -1,0 +1,56 @@
+/* Styling för hela sidan */
+body {
+  font-family: 'Source Code Pro', monospace;
+  display: flex;
+}
+
+/* Styling för texter och länkar */
+h1 {
+  font-size: 90px;
+  text-align: center;
+  padding: 10px;
+}
+
+h2 {
+  font-size: 15px;
+}
+
+a {
+  color: #fe859f;
+}
+
+/* Styling för alla produkter – dessa är children till
+sektionen med klassnamnet all-products */
+.product {
+  border: solid #fe859f 0.5px;
+  margin: 10px;
+  padding: 30px;
+  width: 25%;
+}
+
+.product img {
+  width: 100%;
+}
+
+/* Sektionen .all-products är parent till div-arna med
+klassnamn .product. Den styr därmed hur alla produkterna
+ska vara placerade.
+Hint! Googla "flex-wrap".*/
+
+.all-products {
+  /* Här testar du dina flexbox-vingar. */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.sidebar {
+  height: 100;
+  width: 10%;
+  padding: 3px;
+  margin-left: 0;
+  background-color: black;
+}
+.sidebar h2 {
+  color: yellow;
+}
